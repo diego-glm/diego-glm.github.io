@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Neural Network Model Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="myScript.js"></script>
+  </head>
+  <body>
+    <h1>Neural Network Model</h1>
+    <label for="input1">Energy:</label>
+    <input type="number" id="input1" placeholder="Energy per person globally">
+    <label for="input2">Urban Area:</label>
+    <input type="number" id="input2" placeholder="Global urban area">
+    <label for="input1">Grazing Area</label>
+    <input type="number" id="input3">
+    <label for="input1">Cropland Area:</label>
+    <input type="number" id="input4">
+    <label for="input1">Game:</label>
+    <input type="number" id="input5">
+    <label for="input1">Duck:</label>
+    <input type="number" id="input6">
+    <label for="input1">Camel:</label>
+    <input type="number" id="input7">
+    <label for="input1">Sheep/Goat:</label>
+    <input type="number" id="input8">
+    <label for="input1">Beef/Buffalo:</label>
+    <input type="number" id="input9">
+    <label for="input1">Pig:</label>
+    <input type="number" id="input10">
+    <label for="input1">Poultry:</label>
+    <input type="number" id="input11">
+    <label for="input1">Other:</label>
+    <input type="number" id="input0">
+    <button onclick="runModel()">Load Model</button><br><br>
+    <button onclick="calc()">Predict</button><br><br>
+    <label for="result">Predicted CO2:</label>
+    <input type="text" id="result1" readonly /><br><br>
+    <label for="result">Predicted CH2:</label>
+    <input type="text" id="result2" readonly /><br><br>
+    <label for="result">Predicted N2O:</label>
+    <input type="text" id="result3" readonly /><br><br>
+  </body>
+</html>
