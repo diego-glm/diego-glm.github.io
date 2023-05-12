@@ -17,7 +17,7 @@ https://api.github.com/repos/<user>/<repo>/git/blobs/<sha>
   https://api.github.com/repos/diego-glm/diego-glm.github.io/git/blobs/2a1ab2a8a353b759655922c55e6322151758c54a
   */
 async function loadModel() { 
-  const model = await tf.loadLayersModel('./model_tfjs/model.json');
+  const model = await tf.loadLayersModel('/model_tfjs/model.json');
   return model;
 }
 
